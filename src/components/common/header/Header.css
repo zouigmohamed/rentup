@@ -1,0 +1,95 @@
+header {
+  background-color: #fff;
+  height: 10vh;
+  box-shadow: 0 5px 30px rgb(0 22 84 / 10%);
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 99999;
+}
+header img {
+  width: 12vw;
+  margin-right: 1vw;
+}
+
+header a {
+  margin-right: 2.5vw;
+  transition: 0.5s;
+  font-weight: 500;
+}
+header a:hover {
+  color: #27ae60;
+}
+header span {
+  width: auto;
+  padding: 0px 6px;
+  background: #27ae60;
+  border-radius: 50px;
+  color: #ffffff;
+  margin-right: 4px;
+  font-weight: 400;
+}
+header h4 {
+  font-weight: 500;
+  margin-right: 20px;
+  margin-top: 0;
+}
+header .toggle {
+  display: none;
+}
+@media screen and (max-width: 1068px) {
+  header {
+    width: 100%;
+    height: 12vh;
+    padding: 0px;
+  }
+  header img {
+    margin-top: 30px;
+    width: 20vw;
+  
+  }
+  header .button {
+    display: none;
+  }
+  header .nav .flex {
+    display: none;
+  }
+  header .toggle {
+    display: block;
+    margin-top: 20px;
+  }
+  header .small {
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0.9;
+    background-color: #27ae60;
+    border-bottom-left-radius:15px ;
+    border-bottom-right-radius:15px ;
+    padding: 20px;
+  }
+  header .small a {
+    width: 100%;
+  }
+  header li a {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  header li a:hover{
+    color: #000;
+    padding-left: 18px;
+    border-left: 10px white solid;
+  }
+}
+@media screen and (max-width: 1020px) {
+  header {
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+  }
+
+}
+

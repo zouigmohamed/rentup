@@ -1,0 +1,64 @@
+.recent .text {
+  padding: 30px;
+}
+.recent .content {
+  display: grid;
+
+  grid-template-columns: repeat(3, 2fr);
+}
+
+.recent .category span {
+  padding: 4px 15px;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 13px;
+  display: inline-block;
+}
+.recent .category i {
+  font-size: 20px;
+}
+.recent p {
+  color: #72809d;
+}
+.recent .img {
+  border-radius: 8px;
+}
+
+.recent .button {
+  border-top: 1px solid #e4e8f3;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 40px;
+}
+.shadow {
+  padding: 2px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+ .recent .shadow:hover {
+    cursor: pointer;
+}
+
+.btnPrice {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 1130px) {
+  .recent .content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 900) {
+  .recent .content {
+    display: grid;
+    gap: 50px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
